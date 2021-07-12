@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="card">
+       <form (ngSubmit)="doSubmitForm()">
+        <h1>Add Intern Details</h1>
+
+        <mat-form-field class="field" appearance="fill" >
+            <mat-label>Intern First Name</mat-label>
+            <input matInput name="internFirstName" [(ngModel)]="data.internFirstName">
+        </mat-form-field><br>
+
+        <mat-form-field class="field" appearance="fill">
+            <mat-label>Intern Last Name</mat-label>
+            <input matInput name="internLastName" [(ngModel)]="data.internLastName"> 
+        </mat-form-field> <br>
+
+        <mat-form-field class="field" appearance="fill">
+            <mat-label>Intern  Mobile No.</mat-label>
+            <input matInput name="internMobileNo" [(ngModel)]="data.internMobileNo">
+        </mat-form-field> <br>
+
+        <mat-form-field class="field" appearance="fill">
+            <mat-label>Intern Profile</mat-label>
+            <input matInput name="internProfile" [(ngModel)]="data.internProfile">
+        </mat-form-field> <br>
+
+        <button type="submit" mat-raised-button color="primary">Add</button>
+        <button type="reset" mat-raised-button color="accent">Reset</button>
+
+        </form> 
+        {{data | json}}
+    </div>
+
+</div>
+
+

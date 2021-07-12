@@ -1,0 +1,16 @@
+.container{
+        margin-top: 20px;
+}
+.field{
+    width: 50%;
+}
+.card{
+    background: white;
+    width: 60%;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.card button{
+    margin: 5px;
+}
