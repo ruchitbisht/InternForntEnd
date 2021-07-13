@@ -17,6 +17,9 @@ import { FormsModule } from '@angular/forms';
 import { BackendService } from './service/backend.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ShowdetailsComponent } from './showdetails/showdetails/showdetails.component';
+import { SearchbyidComponent } from './searchbyid/searchbyid.component';
+import { UpdateinternComponent } from './updateintern/updateintern.component';
+import { RemoveinternComponent } from './removeintern/removeintern.component';
 
 
 @NgModule({
@@ -25,7 +28,10 @@ import { ShowdetailsComponent } from './showdetails/showdetails/showdetails.comp
     NavbarComponent,
     HomeComponent,
     AdddetailsComponent,
-    ShowdetailsComponent
+    ShowdetailsComponent,
+    SearchbyidComponent,
+    UpdateinternComponent,
+    RemoveinternComponent,
   ],
   imports: [
     BrowserModule,

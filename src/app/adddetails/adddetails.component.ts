@@ -13,6 +13,7 @@ export class AdddetailsComponent implements OnInit {
     internFirstName:"",
     internLastName:"",
     internMobileNo:"",
+    internDOB:"",
     internProfile:""
   }
   
@@ -26,7 +27,7 @@ export class AdddetailsComponent implements OnInit {
     console.log("DATA",this.data);
 
     if(this.data.internFirstName==''||this.data.internLastName=='' 
-     || this.data.internProfile=='' )
+     || this.data.internProfile==''|| this.data.internMobileNo=='' || this.data.internDOB=='' )
     {
       this.snack.open("fields cannot be empty","Cancel");
       return;
